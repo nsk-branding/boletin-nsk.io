@@ -46,3 +46,17 @@ body {
     grid-row: span 2;
   }
 }
+
+.overlay-text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250%, -400%);
+  color: rgb(99, 1, 169);
+  font-family: sans-serif;
+  font-size: 19px;
+}
+.grid-item:hover .overlay-text {
+  display: block;
+}
