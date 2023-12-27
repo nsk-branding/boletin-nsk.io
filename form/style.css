@@ -11,14 +11,14 @@ body {
 
 
 
-p {
+p, h1 {
     color: #d2d2d2;
 }
 
 p,
 input,
 textarea,
-label {
+label,h1 {
     font-family: 'Poppins',
         sans-serif;
 }
@@ -58,9 +58,10 @@ input[type=submit] {
     color: white;
     font-size: 14px;
     border-bottom: none;
-    margin-top: 30px;
+    margin-top: 1px;
     cursor: pointer;
     transition: all .3s ease;
+    padding: 6px 6px;
 }
 
 input[type=submit]:hover {
