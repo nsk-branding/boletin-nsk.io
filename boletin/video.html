@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video</title>
-</head>
+    <link rel="stylesheet" href="video.css" />
 
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700,800,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <header>
-        <div class="absolute">
-            <h1>nsk</h1>
-        </div>
-        <video controls onloadedmetadata="this.muted=true" autoplay loop>
-            <source src="./vid/Let_The_Weed_Bun-feat-Davojah_Music.mp4">
-        </video>
+        <!-- <div class="overlay"></div> -->
+      <div class="absolute overlay">
+        <h1>nsk</h1>
+      </div>
+      <video controls onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="./vid/Let_The_Weed_Bun-feat-Davojah_Music.mp4" />
+      </video>
     </header>
-</body>
-
+  </body>
 </html>
