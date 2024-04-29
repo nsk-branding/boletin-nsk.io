@@ -149,6 +149,7 @@ a {
     color: #090400;
     padding: 22px 20px;
     text-transform: uppercase;
+    border-radius: 20px;
 }
 .main-menu ul {
     margin: 0;
@@ -178,6 +179,7 @@ nav.main-menu {
 	padding-top: 20px; 
 	padding-bottom: 20px;
 	border-bottom: 1px solid #000;
+    
 }
 
 .main-menu ul li:first-child {
@@ -283,6 +285,7 @@ nav.main-menu {
 .banner-image{
 	width: 100%;
 	float: left;
+    border-radius: 20px;
 }
 
 .lorem_text{
@@ -388,12 +391,14 @@ nav.main-menu {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+    border-radius: 20px;
 }
 .gallery_taital{
  	width: 100%;
  	float: left;
  	color: #383737;
  	font-size: 50pt;
+    border-radius: 20px;
 }
 
 .our_text{
@@ -411,16 +416,19 @@ nav.main-menu {
     font-size: 30pt;
     font-size: 20pt;
     font-weight: 700;
+    border-radius: 20px;
 }
 
 .touch_main{
 	width: 100%;
 	float: left;
 	margin-top: 50px;
+    border-radius: 20px;
 }
 .images {
     width: 100%!important;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 
@@ -429,6 +437,7 @@ nav.main-menu {
     float: left;
     background-color: #bd9bad;
     padding: 40px 20px 13px 20px;
+    border-radius: 20px;
 }
 
 .email-bt {
@@ -561,7 +570,9 @@ button.main_bt a:hover { color: #bd9bad; }
 	color: #bd9bad;
 }
 
-.hello_images{ width: 100%; float: left; }
+.hello_images{ width: 100%;     float: left; 
+    border-radius: 20px;
+}
 
 .container {
   position: relative;
@@ -593,6 +604,7 @@ button.main_bt a:hover { color: #bd9bad; }
   opacity: 0;
   transition: .5s ease;
   background-color: #bd9bad;
+border-radius: 20px;
 }
 
 .container:hover .overlay {
@@ -606,8 +618,10 @@ button.main_bt a:hover { color: #bd9bad; }
 
 .product_section_2 .images {
     border: solid #393838 23px;
+    border-radius: 20px;
 }
 
 .product_section_2 .images:hover {
     border-color: #bd9bad;
+    border-radius: 20px;
 }
