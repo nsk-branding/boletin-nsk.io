@@ -9,18 +9,17 @@ body {
     text-align: center;
 }
 
-
-
-p, h1 {
+p,
+h1 {
     color: #d2d2d2;
 }
 
 p,
 input,
 textarea,
-label,h1 {
-    font-family: 'Poppins',
-        sans-serif;
+label,
+h1 {
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -30,10 +29,19 @@ label,h1 {
     padding: 5%;
 }
 
+/* Estilos del formulario */
 form {
     text-align: left;
     padding: 20px;
     font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Fondo blanco semi-transparente */
+    backdrop-filter: blur(10px);
+    /* Desenfoque del fondo */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Borde con transparencia */
 }
 
 input,
