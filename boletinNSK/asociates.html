@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loraine_NSK - NSK Associates</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -131,30 +132,58 @@
             }
         }
 
-         .button-container {
-            width: 100%;
-            margin-top: 20px;
-            display: flex;
-            flex-direction: row; /* Cambié esto para apilar horizontalmente */
-            align-items: center; /* Centra los botones */
-            justify-content: center; /* Centra los botones horizontalmente */
-            gap: 10px;
-        }
+.button-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* Apila horizontalmente */
+    align-items: center; /* Centra los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    gap: 10px;
+}
 
-        .btn {
-            background-color: #cd400d; /* Color de fondo */
-            color: white; /* Color del texto */
-            padding: 5px 11px; /* Espaciado */
-            border-radius: 5px; /* Bordes redondeados */
-            text-decoration: none; /* Quitar subrayado */
-            margin: 15px; /* Espacio entre botones */
-            font-size: 12px; /* Tamaño de fuente */
-            transition: background-color 0.3s; /* Transición suave al cambiar color */
-        }
+.btn {
+    position: relative; /* Necesario para posicionar el tooltip */
+    background-color: #cd400d; /* Color de fondo */
+    color: white; /* Color del ícono */
+    padding: 10px; /* Espaciado */
+    border-radius: 50%; /* Hace que sea circular */
+    text-decoration: none; /* Quitar subrayado */
+    margin: 15px; /* Espacio entre íconos */
+    font-size: 24px; /* Tamaño del ícono */
+    display: flex; /* Flex para centrar el ícono */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s; /* Transición suave */
+}
 
-        .btn:hover {
-            background-color: #ff6600; /* Color al pasar el ratón */
-        }
+.btn:hover {
+    background-color: #ff6600; /* Color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.tooltip {
+    visibility: hidden; /* Oculto por defecto */
+    width: 120px; /* Ancho del tooltip */
+    background-color: #333; /* Fondo del tooltip */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centrado */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    position: absolute; /* Posición absoluta */
+    z-index: 1; /* Asegura que esté encima */
+    bottom: 125%; /* Posición por encima del botón */
+    left: 50%; /* Centra horizontalmente */
+    margin-left: -60px; /* Ajuste para centrar */
+    opacity: 0; /* Invisible inicialmente */
+    transition: opacity 0.3s; /* Transición suave de opacidad */
+}
+
+.btn:hover .tooltip {
+    visibility: visible; /* Visible al pasar el ratón */
+    opacity: 1; /* Opacidad completa */
+}
+
     </style>
 </head>
 
@@ -184,16 +213,26 @@
 
     <!-- Botones estilizados -->
     <div class="button-container">
-        
-        
-        <a href="https://www.utherverse.com/net/Gifts/?MemberID=104032246" target="_blank" class="btn">SEND ME A GIFT</a>
-        <a href="https://www.utherverse.com/Net/blog/view_blog.aspx?viewLogMId=104032246" target="_blank" class="btn">READ
-            ALL MY BLOGS</a>
+        <a href="https://www.utherverse.com/net/Gifts/?MemberID=104032246" target="_blank" class="btn">
+            <i class="fas fa-gift"></i>
+            <span class="tooltip">SEND ME A GIFT</span> <!-- Tooltip -->
+        </a>
+        <a href="https://www.utherverse.com/Net/blog/view_blog.aspx?viewLogMId=104032246" target="_blank" class="btn">
+            <i class="fas fa-blog"></i>
+            <span class="tooltip">READ ALL MY BLOGS</span> <!-- Tooltip -->
+        </a>
         <a href="https://www.utherverse.com/net/userMedia/MIShowPics.aspx?MemberId=104032246&fdr=0&pg=1" target="_blank"
-            class="btn">VIEW MY PICS</a>
-        <a href="https://www.utherverse.com/email/Compose.aspx?to=104032246" target="_blank" class="btn">SEND ME A
-            MESSAGE</a>
+            class="btn">
+            <i class="fas fa-images"></i>
+            <span class="tooltip">VIEW MY PICS</span> <!-- Tooltip -->
+        </a>
+        <a href="https://www.utherverse.com/email/Compose.aspx?to=104032246" target="_blank" class="btn">
+            <i class="fas fa-envelope"></i>
+            <span class="tooltip">SEND ME A MESSAGE</span> <!-- Tooltip -->
+        </a>
     </div>
+
+
 
     <p>Hello! 👋 Welcome to my page.</p>
     <p>I am Lorena, Manager at NSK Group. I teach graphic design and 3D animation at NSK Academy, and I also dance with
