@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loraine_NSK - NSK Associates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121433;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header con efecto glassmorphism */
+        .header {
+            position: relative;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px) saturate(200%);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+            color: white;
+            margin: 20px;
+        }
+
+        .header img {
+            width: 150px;
+            border-radius: 10%;
+            margin-bottom: 10px;
+            border: 3px solid #cd400d;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header svg {
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            color: white;
+        }
+
+        .section h2 {
+            color: #cd400d;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Cards con glassmorphism */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px) saturate(180%);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .card a {
+            display: block;
+            background-color: #cd400d;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #ff6600;
+        }
+         /* Cartelito "Coming Soon" */
+        .card a[href="##"]::after {
+            content: "Coming Soon";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 102, 0, 0.9);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            animation: neon-glow 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Efecto de neón */
+        @keyframes neon-glow {
+            from {
+                box-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600, 0 0 20px #ff6600;
+            }
+
+            to {
+                box-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600, 0 0 40px #ff6600;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="/boletin/img/logo-cartel.jpg" alt="Loraine_NSK Avatar">
+        <svg width="300" height="100">
+            <defs>
+                <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                    <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+                    <feFlood flood-color="#ff6600" result="color" />
+                    <feComposite in="color" in2="offsetBlur" operator="in" result="glow" />
+                    <feMerge>
+                        <feMergeNode in="glow" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18"
+                font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" fill="white" filter="url(#neon)">
+                Loraine_NSK
+            </text>
+        </svg>
+
+        <p>Hello! 👋 Welcome to my page.</p>
+        <p>I am Loraine, Manager at NSK Group. I teach graphic and 3D design.</p>
+        <p>I help people learn to make amazing visuals!</p>
+        <p>At NSK, we offer creative digital solutions. We create custom profiles, websites, logos, and bulletins.</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Our Associates</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="/boletin/img/logos/CB.gif" alt="CB">
+                    <p>Crazy Bunny</p>
+                    <a href="https://nuskalore.github.io/boletin-nsk.io/partners/cazy-bunny/crazy-bunny.html" target="_blank">Visit Catalog</a>
+                </div>
+
+                <div class="card">
+                    <img src="/boletin/img/logos/BF.png" alt="BF">
+                    <p>BONITA Fashion</p>
+                    <a href="https://www.utherverse.com/clothing/search.aspx?q=bonita&mid=104032246" target="_blank">Visit Catalog</a>
+                </div>
+
+                <div class="card">
+                    <img src="/boletin/img/logos/MHS.png" alt="MHS">
+                    <p>MOON HairSaloon</p>
+                    <a href="https://www.utherverse.com/clothing/search.aspx?q=hair&cat=92&mid=104032246" target="_blank">Visit Catalog</a>
+                </div>
+
+                <div class="card">
+                    <img src="/boletin/img/logos/ATS.gif" alt="ATS">
+                    <p>ARCANO TATTOO STUDIO</p>
+                    <a href="https://www.utherverse.com/Clothing/search.aspx?q=ArcanoInc-nsk" target="_blank">Visit Catalog</a>
+                </div>
+
+                <div class="card">
+                    <img src="/boletin/img/logos/BS.png" alt="BS">
+                    <p>BARBER SHOP/p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+
+                <div class="card">
+                    <img src="/boletin/img/logos/BW.png" alt="BW">
+                    <p>Brocelle Weddings</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/deco-help.png" alt="DH">
+                    <p>Deco Help</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/elegance.png" alt="elegance">
+                    <p>Elegance</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/fausto.png" alt="fausto">
+                    <p>MOON HairSaloon</p>
+                    <a href="https://www.utherverse.com/clothing/search.aspx?q=fausto%20nsk&mid=104032246" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/form-agency.jpg" alt="FMA">
+                    <p>FORM Marketing Agency</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/fresh-drink.gif" alt="FD">
+                    <p>NSK FreshDrink</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/NSK.gif" alt="MHS">
+                    <p>NSK</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/OC.png" alt="MHS">
+                    <p>ONE Cosmetics</p>
+                    <a href="https://www.redlightcenter.com/clothing/search.aspx?q=ONEnsk&cat=93" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/otaku.png" alt="otaku">
+                    <p>OTAKU</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/PD.png" alt="PD">
+                    <p>Private Desire</p>
+                    <a href="https://www.utherverse.com/clothing/search.aspx?q=Private%20Desire%20nsk&cat=23&mid=104032246" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/themafia.png" alt="MHS">
+                    <p>TheMafia</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+                <div class="card">
+                    <img src="/boletin/img/logos/thepirate.png" alt="TP">
+                    <p>ThePirate</p>
+                    <a href="##" target="_blank">Visit Catalog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
