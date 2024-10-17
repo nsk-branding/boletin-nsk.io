@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSK Branding - October Discounts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: relative;
+            height: 200px;
+            background-color: transparent;
+            /*background-image: url('https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .header h1 {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            stroke: #fff;
+            width: 200px;
+            animation-name: animate;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes animate {
+            0% {
+                filter: drop-shadow(0px 0px 1px #fff) drop-shadow(0px 0px 3px #fff) drop-shadow(0px 0px 10px #ff80b3) drop-shadow(0px 0px 30px #ff4d94) drop-shadow(0px 0px 50px #ff0066);
+            }
+
+            100% {
+                filter: drop-shadow(0px 0px 3px #fff) drop-shadow(0px 0px 6px #fff) drop-shadow(0px 0px 15px #ff80b3) drop-shadow(0px 0px 40px #ff4d94) drop-shadow(0px 0px 60px #ff0066);
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.7);
+            /* Efecto glassmorfismo */
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+            /* Texto en blanco */
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #cd400d;
+            /* Color naranja */
+            margin-bottom: 10px;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .pricing-table th {
+            background-color: #333;
+            color: white;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: red;
+        }
+
+        .new-price {
+            color: green;
+            font-weight: bold;
+        }
+
+ 
+
+        .contact-button {
+            background-color: black;
+            /* Fondo transparente */
+            border: none;
+            /* Sin borde */
+            color: white;
+            /* Texto en blanco */
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Transición suave */
+            font-weight: bold;
+            font-size:large;
+            /* Texto en negrita */
+            padding: 5px 10px;
+            /* Espaciado alrededor del texto */
+            border-radius: 5px;
+        }
+
+        .contact-button:hover {
+            background-color: #cd400d;
+            /* Color naranja al pasar el mouse */
+            color: white;
+            /* Texto en blanco */
+            border-radius: 5px;
+            /* Bordes redondeados */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <svg viewBox="0 0 300 100">
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="#ff6600"
+                font-family="'Poppins', sans-serif" font-weight="bold">NSK</text>
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Our Services & Pricing</h2>
+            <p>Don't miss out on our fantastic discounts!</p>
+            <table class="pricing-table">
+                <tr>
+                    <th>Service</th>
+                    <th>Price (Rays)</th>
+                </tr>
+                <tr>
+                    <td>Customized Utherverse Profiles</td>
+                    <td><span class="old-price">80 Rays</span> <span class="new-price">60 Rays</span></td>
+                </tr>
+                <tr>
+                    <td>Website Creation</td>
+                    <td><span class="old-price">300 Rays</span> <span class="new-price">200 Rays</span></td>
+                </tr>
+                <tr>
+                    <td>Custom Avatar Creation</td>
+                    <td><span class="old-price">70 Rays</span> <span class="new-price">50 Rays</span></td>
+                </tr>
+                <tr>
+                    <td>Professional Logo Design</td>
+                    <td><span class="old-price">50 Rays</span> <span class="new-price">40 Rays</span></td>
+                </tr>
+                <tr>
+                    <td>Canva Bulletins (Ad-Free)</td>
+                    <td><span class="old-price">35 Rays each</span> <span class="new-price">25 Rays each</span></td>
+                </tr>
+                <tr>
+                    <td>Complete Design Course (Learn Blender, Photoshop, and more - From Beginner to Expert in Hair,
+                        Skin, Clothing, Accessories, and 3D Animation)</td>
+                    <td><span class="old-price">600 Rays</span> <span class="new-price">500 Rays</span></td>
+                </tr>
+                <tr>
+                    <td>Canva Full Course (Skype required - Create Stunning Bulletins and Web Pages)</td>
+                    <td><span class="old-price">85 Rays</span> <span class="new-price">65 Rays</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Why Choose NSK?</h2>
+            <p>We craft profiles that reflect
+                your unique personality and style ensuring optimized load times and top-tier professionalism.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>For more information, reach out to
+                <button class="contact-button"
+                    onclick="window.location.href='https://www.utherverse.com/email/Compose.aspx?to=104032246'">
+                    Nabemono_NSK
+                </button>.
+            </p>
+        </div>
+
+        
+    </div>
+</body>
+
+</html>
