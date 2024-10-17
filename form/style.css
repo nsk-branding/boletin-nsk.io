@@ -34,7 +34,7 @@ form {
     text-align: left;
     padding: 20px;
     font-size: 14px;
-    background: rgba(255, 255, 255, 0.1);
+    background: white;
     /* Fondo blanco semi-transparente */
     backdrop-filter: blur(10px);
     /* Desenfoque del fondo */
@@ -61,7 +61,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #545557;
+    background-color: #ff6600;
     padding: 15px 0;
     color: white;
     font-size: 14px;
@@ -86,7 +86,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-    outline: 1px solid #828282;
+    outline: 1px solid #ffffff;
 }
 
 a {
