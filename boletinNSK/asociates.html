@@ -130,39 +130,117 @@
                 box-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600, 0 0 40px #ff6600;
             }
         }
+
+         .button-container {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row; /* Cambié esto para apilar horizontalmente */
+            align-items: center; /* Centra los botones */
+            justify-content: center; /* Centra los botones horizontalmente */
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: #cd400d; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 5px 11px; /* Espaciado */
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Quitar subrayado */
+            margin: 15px; /* Espacio entre botones */
+            font-size: 12px; /* Tamaño de fuente */
+            transition: background-color 0.3s; /* Transición suave al cambiar color */
+        }
+
+        .btn:hover {
+            background-color: #ff6600; /* Color al pasar el ratón */
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="header">
-        <img src="https://raw.githubusercontent.com/nsk-branding/boletin-nsk.io/refs/heads/master/boletin/img/logo-cartel.jpg" alt="Loraine_NSK Avatar">
-        <svg width="300" height="100">
-            <defs>
-                <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
-                    <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
-                    <feFlood flood-color="#ff6600" result="color" />
-                    <feComposite in="color" in2="offsetBlur" operator="in" result="glow" />
-                    <feMerge>
-                        <feMergeNode in="glow" />
-                        <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                </filter>
-            </defs>
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18"
-                font-family="font-family="'Poppins', sans-serif", 'Book Antiqua', Palatino, serif" fill="white" filter="url(#neon)">
-                Lorena_NSK
-            </text>
-        </svg>
+<div class="header">
+    <img src="https://raw.githubusercontent.com/nsk-branding/boletin-nsk.io/refs/heads/master/boletin/img/logo-cartel.jpg"
+        alt="Loraine_NSK Avatar">
+    <svg width="300" height="100">
+        <defs>
+            <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+                <feFlood flood-color="#ff6600" result="color" />
+                <feComposite in="color" in2="offsetBlur" operator="in" result="glow" />
+                <feMerge>
+                    <feMergeNode in="glow" />
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+        </defs>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18"
+            font-family="'Poppins', sans-serif, 'Book Antiqua', Palatino, serif" fill="white" filter="url(#neon)">
+            Lorena_NSK
+        </text>
+    </svg>
 
-        <p>Hello! 👋 Welcome to my page.</p>
-        <p>I am Lorena, Manager at NSK Group. I teach graphic design and 3D animation at NSK Academy, and I also dance with the
-            Heart & Soul Dance Team.</p>
+    <!-- Botones estilizados -->
+    <div class="button-container">
         
-        <p>At NSK, we offer creative digital solutions, including custom profiles, websites, logos, and bulletins.</p>
-
+        <a href="https://www.utherverse.com/email/Compose.aspx?to=104032246" target="_blank" class="btn">SEND ME A
+            MESSAGE</a>
+        <a href="https://www.utherverse.com/net/Gifts/?MemberID=104032246" target="_blank" class="btn">SEND ME A GIFT</a>
+        <a href="https://www.utherverse.com/Net/blog/view_blog.aspx?viewLogMId=104032246" target="_blank" class="btn">READ
+            ALL MY BLOGS</a>
+        <a href="https://www.utherverse.com/net/userMedia/MIShowPics.aspx?MemberId=104032246&fdr=0&pg=1" target="_blank"
+            class="btn">VIEW MY PICS</a>
     </div>
+
+    <p>Hello! 👋 Welcome to my page.</p>
+    <p>I am Lorena, Manager at NSK Group. I teach graphic design and 3D animation at NSK Academy, and I also dance with
+        the
+        Heart & Soul Dance Team.</p>
+
+    <p>At NSK, we offer creative digital solutions, including custom profiles, websites, logos, and bulletins.</p>
+
+    
+</div>
+
+<style>
+    .button-container {
+        margin-top: 20px;
+        /* Un poco de espacio arriba */
+        display: flex;
+        flex-direction:row
+        /* Para que se apilen verticalmente */
+        align-items: center;
+        /* Centra los botones */
+    }
+
+    .btn {
+        background-color: #cd400d;
+        /* Color de fondo */
+        color: white;
+        /* Color del texto */
+        padding: 5px 11px;
+        /* Espaciado */
+        border-radius: 5px;
+        /* Bordes redondeados */
+        text-decoration: none;
+        /* Quitar subrayado */
+        margin: 5px 0;
+        /* Espacio entre botones */
+        font-size: 9px;
+        /* Tamaño de fuente */
+        transition: background-color 0.3s;
+        /* Transición suave al cambiar color */
+    }
+
+    .btn:hover {
+        background-color: #ff6600;
+        /* Color al pasar el ratón */
+    }
+</style>
+
+
 
     <div class="container">
         <div class="section">
