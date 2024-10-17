@@ -10,13 +10,100 @@
     href="https://github.com/nuskaLore/sampleimagesUTHERVERSE.github.io/blob/main/favicon.png?raw=true">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: transparent;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #ff6600;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ff6600;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    form {
+      font-size: 14px;
+      text-align: left;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px;
+      background-color: transparent;
+      border: 2px solid rgba(255, 102, 0, 0.7);
+      color: white;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      background-color: #ff6600;
+      padding: 15px 0;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background: #fff;
+      color: #ff6600;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #fff;
+    }
+
+    a {
+      color: #ff6600;
+      font-style: italic;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
     <h1>Contact 📧</h1>
-    <p> I'll get back to you as soon as I can 💜</p>
+    <p>I'll get back to you as soon as I can 💜</p>
     <form action="https://formspree.io/f/xpzvaglw" method="POST">
       <div class="field name">
         <input type="text" placeholder="Name:" name="name" required />
@@ -29,7 +116,7 @@
       </div>
 
       <div class="field textarea">
-        <textarea name="message" cols="30" rows="2" placeholder="Message.." required></textarea>
+        <textarea name="message" cols="30" rows="5" placeholder="Message.." required></textarea>
       </div>
 
       <input type="submit" value="Send">
