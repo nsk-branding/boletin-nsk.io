@@ -14,14 +14,49 @@
         }
 
         .header {
-            background-color: #333;
+            position: relative;
+            height: 250px;
+            background-color: #000;
+            background-image: url('https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             color: white;
             text-align: center;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .header h1 {
             margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            stroke: #fff;
+            width: 900px;
+            animation-name: animate;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes animate {
+            0% {
+                filter: drop-shadow(0px 0px 1px #fff) drop-shadow(0px 0px 3px #fff) drop-shadow(0px 0px 10px #ff80b3) drop-shadow(0px 0px 30px #ff4d94) drop-shadow(0px 0px 50px #ff0066);
+            }
+
+            100% {
+                filter: drop-shadow(0px 0px 3px #fff) drop-shadow(0px 0px 6px #fff) drop-shadow(0px 0px 15px #ff80b3) drop-shadow(0px 0px 40px #ff4d94) drop-shadow(0px 0px 60px #ff0066);
+            }
         }
 
         .container {
@@ -63,23 +98,32 @@
         .old-price {
             text-decoration: line-through;
             color: red;
-            /* Cambia el color de la línea tachada */
         }
 
         .new-price {
             color: green;
-            /* Color del nuevo precio */
             font-weight: bold;
-            /* Opcional: hacer el nuevo precio en negrita */
         }
 
         .footer {
-            background-color: #333;
+            height: 150px;
+            background-color: #000;
+            background-image: url('https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             margin-top: 20px;
             border-radius: 0 0 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer p {
+            margin: 0;
         }
 
         .footer a {
@@ -87,7 +131,6 @@
             text-decoration: none;
         }
 
-        /* Estilos para el formulario */
         .form-group {
             margin-bottom: 15px;
         }
@@ -116,7 +159,6 @@
             background-color: #b5380c;
         }
 
-        /* Estilos para los íconos de Skype y Discord */
         .social-icons {
             margin-top: 20px;
         }
@@ -136,8 +178,10 @@
 <body>
 
     <div class="header">
-        <h1>NSK Branding</h1>
-        <p>Profiles, websites, logos, custom avatars, and more!</p>
+        <svg viewBox="0 0 300 100">
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="#fff"
+                font-family="Arial">NSK</text>
+        </svg>
     </div>
 
     <div class="container">
