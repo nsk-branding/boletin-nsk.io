@@ -1,0 +1,363 @@
+<style>
+
+/* Ocultar la sección 'General Info' */
+#ctl00_oCPH1_tbDetailsSection>tr>td>div[style*="General Info"],
+#ctl00_oCPH1_tbDetailsSection>tr>td>div[style="margin: 0px 0px 10px 0px;"] {
+    display: none !important;
+}
+
+/* Ocultar los títulos específicos */
+div[style="position: relative; top: 3px;"] {
+    display: none !important;
+}
+
+/* Ocultar elementos con el estilo específico */
+div[style="height: 21px; background: #000000 url('/images/t2/sec-header-bg-bk.gif') repeat-x; color: #FFFFFF; font-weight: bold;"] {
+    display: none !important;
+}
+
+/* Remove specific elements */
+img[src="/images/t2/sec-header-arrow-bk.gif"],
+#ctl00_oMasterHeaderDiv,
+.MPHeaderNavCell,
+#ctl00_oMasterAdDiv,
+.MPToolsBar,
+#ctl00_oCPH1_pnlSexyStuff,
+
+/* Ocultar las secciones de 'Last Profile Login' y 'Last World Login' */
+#ctl00_oCPH1_trMemberStats,
+#ctl00_oCPH1_lblSCLastLogin,
+#ctl00_oCPH1_lblLastLogin {
+    display: none !important;
+}
+
+/* Ocultar la sección del perfil de Nabemono_NSK */
+td[style="width: 390px; padding: 0px 5px 0px 5px;"] {
+    display: none !important;
+}
+
+/* Ocultar todos los títulos en negrita (<b>) dentro del contenedor */
+td b {
+    display: none !important;
+}
+
+/* Ocultar el contenido dentro del span con el ID ctl00_oCPH1_lblWebsites */
+#ctl00_oCPH1_lblWebsites {
+    display: none !important;
+}
+
+/* Ocultar el contenido dentro del span con el ID ctl00_oCPH1_lblLinks */
+#ctl00_oCPH1_lblLinks {
+    display: none !important;
+}
+
+/* Ocultar el contenido dentro del span con el ID ctl00_oCPH1_lblMovies */
+#ctl00_oCPH1_lblMovies {
+    display: none !important;
+}
+
+/* Ocultar todos los elementos <hr> con un ancho específico */
+hr[width="360"][noshade] {
+    display: none !important;
+}
+
+
+
+body {
+    background: url(#) no-repeat fixed center top;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color: 000000 !important;
+}
+
+img {
+    border: none;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+td.text table table table tr td a {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+td.text table table table tr td a:hover {
+    color: ffffff !important;
+    border-bottom: none;
+}
+
+table,
+tr,
+td {
+    background-color: transparent;
+    border-style: none;
+}
+
+table table table {
+    background-color: ;
+    background-image: url(##);
+    background-position: top right;
+    background-repeat: no-repeat;
+    border-color: 000000;
+    border-style: solid;
+    border-width: 2px;
+}
+
+table table table table {
+    background-image: none;
+    background-color: transparent;
+    border-style: none;
+}
+
+table,
+tr,
+td,
+li,
+p,
+div,
+.text {
+    color: ffffff;
+    line-height: 13px;
+    font-size: 11px;
+    font-family: "Lucida Grande", Verdana, sans-serif;
+}
+
+td.text {
+    vertical-align: top;
+}
+
+ExtendedNetwork,
+table.extendedNetwork {
+    background: url(##) no-repeat center center;
+    height: 149px;
+}
+
+.blacktext12 {
+    color: ffffff !important;
+    font-size: 11px;
+    _font-size: 11px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center top;
+    line-height: 15px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.nametext {
+    color: ffffff !important;
+    font-size: 18px;
+    _font-size: 18px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 47px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: ;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.btext {
+    color: ffffff !important;
+    font-size: 14px;
+    _font-size: 14px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 44px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.orangetext15 {
+    color: ffffff !important;
+    font-size: 14px;
+    _font-size: 14px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 20px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.whitetext12 {
+    color: ffffff !important;
+    font-size: 14px;
+    _font-size: 14px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 25px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.redtext,
+.redbtext {
+    color: ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+}
+
+.blacktext10 {
+    color: ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: ;
+}
+
+.lightbluetext8 {
+    color: ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+a:link,
+a:visited,
+a.redlink:active,
+a.redlink:visited,
+a.redlink:link,
+a.searchlinksmall:link,
+a.searchlinksmall:visited {
+    color: ffffff !important;
+    * border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    padding: ;
+}
+
+a:hover,
+a.redlink:hover,
+a.searchlinksmall:hover,
+a:hover img {
+    color: ffffff !important;
+    border-bottom-color: transparent;
+    text-decoration: none;
+    padding: 0;
+}
+
+a.navbar:active,
+a.navbar:visited,
+a.navbar:link {
+    color: ffffff !important;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.navbar:hover {
+    color: ffffff !important;
+    text-decoration: f1fff7;
+}
+
+- div table tr td table {
+    background-color: transparent !important;
+}
+
+div table tr td table a {
+    zpadding: 0 !important;
+}
+
+div table tr td table font {
+    color: ffffff !important;
+}
+
+</style><style type="text/css">.contactTable {
+    width: 300px !important;
+    height: 150px !important;
+    padding: 0px !important;
+    background-image: url(##);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.contactTable table,
+table.contactTable td {
+    padding: 0px !important;
+    border: 0px;
+    background-color: transparent;
+    background-image: none;
+    line-height: normal;
+}
+
+.contactTable a img {
+    visibility: hidden;
+    border: 0px !important;
+}
+
+.contactTable a {
+    display: block;
+    height: 31px;
+    width: 115px;
+    background-color: transparent;
+    border-bottom: none !important;
+}
+
+.contactTable .text {
+    font-size: 1px !important;
+}
+
+.contactTable .text,
+.contactTable a,
+.contactTable img {
+    filter: none !important;
+}
+
+.contactTable a:hover {
+    background-color: transparent;
+}
+
+.contactTable .whitetext12 {
+    display: none;
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+</style>
