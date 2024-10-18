@@ -64,7 +64,7 @@ hr[width="360"][noshade] {
 
 
 body {
-    background: url(#) no-repeat fixed center top;
+    background-color: transparent;
     margin-top: 0px;
     margin-right: 0px;
     background-color: 000000 !important;
