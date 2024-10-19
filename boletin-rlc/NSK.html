@@ -21,12 +21,13 @@
         .logo-container {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin: 20px auto;
         }
 
         .logo-image {
-            width: 150px;
-            height: 150px;
+            max-width: 20vw;
+            /* Responsive width */
+            height: auto;
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -41,12 +42,16 @@
             text-align: center;
             margin: 20px 0;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            font-size: 2.5rem;
+            /* Responsive font size */
         }
 
         h2 {
             text-align: center;
             color: #ff6600;
             margin: 10px 0;
+            font-size: 1.5rem;
+            /* Responsive font size */
         }
 
         p {
@@ -54,7 +59,8 @@
             max-width: 600px;
             margin: 15px auto;
             padding: 15px;
-            font-size: 18px;
+            font-size: 1.125rem;
+            /* Responsive font size */
             text-align: center;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 15px;
@@ -82,8 +88,9 @@
         }
 
         .section img {
-            width: 50px;
-            height: 50px;
+            max-width: 10vw;
+            /* Responsive width */
+            height: auto;
             margin-right: 15px;
         }
 
@@ -98,7 +105,8 @@
             border: none;
             padding: 10px 25px;
             border-radius: 10px;
-            font-size: 18px;
+            font-size: 1.125rem;
+            /* Responsive font size */
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: background-color 0.3s ease;
@@ -111,7 +119,8 @@
         .iframe-container {
             width: 90%;
             max-width: 800px;
-            height: 800px;
+            height: 50vh;
+            /* Responsive height */
             margin: 20px auto;
             border-radius: 10px;
             overflow: hidden;
@@ -189,16 +198,28 @@
         /* Media Queries */
         @media (max-width: 768px) {
             .logo-image {
-                width: 120px;
-                height: 120px;
+                max-width: 30vw;
+                /* Responsive width */
             }
 
             h1 {
-                font-size: 1.5rem;
+                font-size: 2rem;
+                /* Responsive font size */
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                /* Responsive font size */
+            }
+
+            p {
+                font-size: 1rem;
+                /* Responsive font size */
             }
 
             .cta button {
-                font-size: 16px;
+                font-size: 1rem;
+                /* Responsive font size */
                 padding: 8px 20px;
             }
 
@@ -209,11 +230,18 @@
 
         @media (max-width: 480px) {
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
+                /* Responsive font size */
+            }
+
+            h2 {
+                font-size: 1rem;
+                /* Responsive font size */
             }
 
             p {
-                font-size: 16px;
+                font-size: 0.875rem;
+                /* Responsive font size */
             }
 
             .copy-box textarea {
@@ -221,7 +249,8 @@
             }
 
             .cta button {
-                font-size: 14px;
+                font-size: 0.875rem;
+                /* Responsive font size */
             }
 
             .copy-box button {
@@ -263,25 +292,32 @@
         <img src="https://img.icons8.com/ios/50/ffffff/edit.png" alt="Custom Bulletins Icon">
         <div>
             <h2>Custom Bulletins</h2>
-            <p>Communicate with creativity and professionalism.</p>
+            <p>Bulletins crafted just for you.</p>
         </div>
     </div>
 
     <div class="cta">
-        <a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104032246" target="_blank">
-            <button>Contact Me</button>
-        </a>
+        <h2>Get Your Custom Bulletin!</h2>
+        <button
+            onclick="window.open('https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104032246', '_blank')">Contact
+            NSK</button>
     </div>
 
     <div class="copy-box">
-        <textarea id="embed-code">
-<iframe src="https://nsk-branding.github.io/boletin-nsk.io/boletin-rlc/NSK.html" width="800" height="900" frameborder="0" scrolling="no"></iframe>
-        </textarea>
+        <textarea id="embed-code"
+            readonly>&lt;iframe src="https://nsk-branding.github.io/boletin-nsk.io/boletin-rlc/NSK.html" width="800" height="600"&gt;&lt;/iframe&gt;</textarea>
         <button onclick="copyToClipboard()">Copy</button>
         <div class="copy-success" id="copy-success">¡Copiado!</div>
     </div>
 
-    
+    <!--<div class="iframe-container">
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/e84yJD1oH68?autoplay=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        
+    </div> -->
+
     <script>
         function copyToClipboard() {
             const textarea = document.getElementById('embed-code');
