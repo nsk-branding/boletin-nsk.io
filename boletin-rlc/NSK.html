@@ -20,20 +20,23 @@
         }
 
         .main-container {
-            width: 95%;
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 20px;
+            width: 100%;
+            max-width: 700px;
+            height: 100%;
+            max-height: 1200px;
+            margin: 0 auto;
+            padding: 15px;
             background: rgba(0, 0, 0, 0.6);
             border-radius: 20px;
             backdrop-filter: blur(8px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+            overflow: hidden;
         }
 
         h1 {
             text-align: center;
             margin: 10px 0;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: #ffffff;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
@@ -49,42 +52,41 @@
             align-items: center;
             justify-content: flex-start;
             width: 90%;
-            max-width: 800px;
-            margin: 20px 0;
-            padding: 20px;
+            margin: 15px 0;
+            padding: 10px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .service img {
-            max-width: 60px;
-            margin-right: 20px;
+            max-width: 50px;
+            margin-right: 15px;
         }
 
         .service h2 {
             color: #00aeff;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-size: 1.25rem;
+            margin-bottom: 5px;
         }
 
         .service p {
             color: #f5f5f5;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         .cta {
             text-align: center;
-            margin-top: 30px;
+            margin: 20px 0;
         }
 
         .cta button {
             background-color: #0099ff;
             color: white;
             border: none;
-            padding: 15px 30px;
-            font-size: 1.25rem;
-            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
@@ -93,47 +95,13 @@
             background-color: #447fa7;
         }
 
-        .copy-box {
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        .copy-box textarea {
-            width: 80%;
-            max-width: 600px;
-            height: 100px;
-            background: rgba(0, 0, 0, 0.8);
-            color: #f5f5f5;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
-            font-family: 'Courier New', monospace;
-            font-size: 1rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .copy-box button {
-            margin-top: 10px;
-            background-color: #0099ff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .copy-box button:hover {
-            background-color: #447fa7;
-        }
-
         .top-right-text {
             position: absolute;
             top: 10px;
             right: 10px;
-            font-size: 12px;
+            font-size: 10px;
             background: rgba(0, 0, 0, 0.6);
-            padding: 5px 10px;
+            padding: 3px 8px;
             border-radius: 5px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
@@ -145,7 +113,7 @@
             }
 
             .service img {
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -156,58 +124,24 @@
 
     <div class="main-container">
         <h1>NSK</h1>
-        <br>
-        <marquee behavior="scroll" direction="left" scrollamount="5">
-        </marquee>
-
 
         <div class="services">
-            <!--<div class="service">
-                <img src="https://img.icons8.com/ios/50/ffffff/user-male-circle.png" alt="Custom Profiles Icon">
-                <div>
-                    <h2>Personalized Profiles</h2>
-                    <p>Custom profiles that reflect your unique style, tailored just for you.</p>
-                </div>
-            </div>-->
-
             <div class="service">
                 <img src="https://img.icons8.com/ios/50/ffffff/t-shirt.png" alt="Clothing and Skins Icon">
                 <div>
-                    <marquee><h2>Creative Design</h2></marquee>
+                    <marquee>
+                        <h2>Creative Design</h2>
+                    </marquee>
                     <p>Exclusive and unique clothing, skins, and designs to help you stand out.</p>
                 </div>
             </div>
-
-            <!--<div class="service">
-                <img src="https://img.icons8.com/ios/50/ffffff/edit.png" alt="Custom Bulletins Icon">
-                <div>
-                    <h2>Custom Bulletins and Web Pages</h2>
-                    <p>Get personalized bulletins and web pages for your special announcements and online presence.</p>
-                </div>
-            </div>-->
         </div>
 
         <div class="cta">
             <button
                 onclick="window.open('https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104032246', '_blank')">Catalog</button>
         </div>
-
-        <!--<div class="copy-box">
-            <textarea id="embed-code"
-                readonly>&lt;iframe src="https://nsk-branding.github.io/boletin-nsk.io/boletin-rlc/NSK.html" width="600" height="1400" scrolling="no"&gt;&lt;/iframe&gt;</textarea>
-            <br>
-            <button onclick="copyToClipboard()">Copy & Share TY!</button>
-        </div>
     </div>
-
-    <script>
-        function copyToClipboard() {
-            const textarea = document.getElementById('embed-code');
-            textarea.select();
-            document.execCommand('copy');
-            alert('Code copied to clipboard. Thanks for your support!✨');
-        }
-    </script>-->
 </body>
 
 </html>
