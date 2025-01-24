@@ -60,3 +60,44 @@ body {
 .grid-item:hover .overlay-text {
   display: block;
 }
+
+/* Mensaje de neón */
+.grid-item {
+  position: relative;
+  /* Necesario para posicionar el texto en relación al contenedor */
+}
+
+.neon-text {
+  position: absolute;
+  top: 10px;
+  /* Ajusta según la esquina que prefieras */
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #ff007f;
+  /* Fondo del texto */
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 20px #ff007f;
+  /* Efecto neón */
+  animation: pulse 1.5s infinite;
+  /* Animación de brillo */
+  text-transform: uppercase;
+  z-index: 2;
+  pointer-events: none;
+  /* Evita interferir con clics */
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 20px #ff007f;
+  }
+
+  50% {
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+  }
+}
